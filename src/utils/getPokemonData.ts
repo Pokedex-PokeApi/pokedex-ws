@@ -73,7 +73,7 @@ const getPokemonData = async (value: string) => {
     id: pokemonData.id,
     name: pokemonSpecieData.names[pokemonNameIndex].name,
     description:
-      pokemonSpecieData.flavor_text_entries[pokemonFlavorTextIndex].flavor_text,
+      pokemonSpecieData.flavor_text_entries[pokemonFlavorTextIndex]?.flavor_text,
     image: getPokemonImageById(String(pokemonData.id)),
     genera: pokemonSpecieData.genera[pokemonGeneraIndex].genus,
     pokedex_number: pokemonData.id.toString().padStart(3, '0'),

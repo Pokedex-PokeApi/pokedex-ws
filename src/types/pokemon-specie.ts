@@ -4,7 +4,7 @@ export type EggGroup = {
 };
 
 export type FlavorTextEntry = {
-  flavor_text: string;
+  flavor_text?: string;
   language: {
     name: string;
     url: string;
